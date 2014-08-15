@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>2048</title>
+  <title>GetMIT!</title>
 
   <link href="style/main.css" rel="stylesheet" type="text/css">
   <link rel="shortcut icon" href="favicon.ico">
@@ -12,17 +12,29 @@
   <meta name="HandheldFriendly" content="True">
   <meta name="MobileOptimized" content="320">
   <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
+
+  <!-- ATTN: If forking this code, don't forget to change/delete the following analytics code. Thanks! -->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-49233756-1', 'mitchellgu.github.io');
+    ga('send', 'pageview');
+
+  </script>
 </head>
 <body>
   <div class="container">
     <div class="heading">
-      <h1 class="title">2048</h1>
+      <h1 class="title">GetMIT</h1>
       <div class="scores-container">
         <div class="score-container">0</div>
         <div class="best-container">0</div>
       </div>
     </div>
-    <p class="game-intro">Join the numbers and get to the <strong>2048 tile!</strong></p>
+    <p class="game-intro">Combine other colleges to reach the <span onclick="document.body.style.background='url(img/petey.png)';">almighty <strong>MIT!</strong></span></p>
 
     <div class="game-container">
       <div class="game-message">
@@ -66,15 +78,20 @@
     </div>
 
     <p class="game-explanation">
-      <strong class="important">How to play:</strong> Use your <strong>arrow keys</strong> to move the tiles. When two tiles with the same number touch, they <strong>merge into one!</strong>
+      <strong class="important">How to play:</strong> Use your <strong>arrow keys</strong> to move the tiles. When two tiles with the same college touch, they <strong>merge into one!</strong>
+      <br><strong class="important">Note:</strong> The order of colleges is not intended to be a ranking (boo), but a rough west-to-east geographical path to MIT.
     </p>
     <hr>
     <p>
-    <strong class="important">Note:</strong> This site is the official version of 2048. You can play it on your phone via <a href="http://git.io/2048">http://git.io/2048.</a> All other apps or sites are derivatives or fakes, and should be used with caution.
+    Wasted too much time on GetMIT already? (I sympathize) <a href="http://www.gofundme.com/843gf0">Help our Science Olympiad team afford nationals</a>
     </p>
     <hr>
     <p>
-    Created by <a href="http://gabrielecirulli.com" target="_blank">Gabriele Cirulli.</a> Based on <a href="https://itunes.apple.com/us/app/1024!/id823499224" target="_blank">1024 by Veewo Studio</a> and conceptually similar to <a href="http://asherv.com/threes/" target="_blank">Threes by Asher Vollmer.</a>
+    Created by <a href="http://web.mit.edu/mitchgu/www">Mitchell Gu</a>. Inspired by <a href="http://naveenarun.github.io/GetCaltech/">Get Caltech by Naveen Arun</a>. Based on <a href="http://gabrielecirulli.com" target="_blank">2048 by Gabriele Cirulli.</a> and <a href="https://itunes.apple.com/us/app/1024!/id823499224" target="_blank">1024 by Veewo Studio</a> and conceptually similar to <a href="http://asherv.com/threes/" target="_blank">Threes by Asher Vollmer.</a>
+    </p>
+    <hr>
+    <p>
+    Background Image: Kresge Auditorium in December <br> Photocred: <a href="https://twitter.com/DrDawnMIT/status/416643272153763841">@DrDawnMIT</a>
     </p>
   </div>
 

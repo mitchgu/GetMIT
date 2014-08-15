@@ -2,13 +2,16 @@
 html, body {
   margin: 0;
   padding: 0;
-  background: #faf8ef;
-  color: #776e65;
+  background: url(https://scontent-a.xx.fbcdn.net/hphotos-prn2/t31.0-8/1502678_10100298599491097_828497142_o.jpg);
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: black;
+  color: #222;
   font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
   font-size: 18px; }
-
-body {
-  margin: 80px 0; }
 
 .heading:after {
   content: "";
@@ -16,8 +19,9 @@ body {
   clear: both; }
 
 h1.title {
-  font-size: 80px;
+  font-size: 64px;
   font-weight: bold;
+  color: #A31F34;
   margin: 0;
   display: block;
   float: left; }
@@ -56,9 +60,9 @@ h1.title {
 .score-container, .best-container {
   position: relative;
   display: inline-block;
-  background: #bbada0;
+  background: #8A8B8C;
   padding: 15px 25px;
-  font-size: 25px;
+  font-size: 20px;
   height: 25px;
   line-height: 47px;
   font-weight: bold;
@@ -104,7 +108,7 @@ p {
   line-height: 1.65; }
 
 a {
-  color: #776e65;
+  color: #A31F34;
   font-weight: bold;
   text-decoration: underline;
   cursor: pointer; }
@@ -115,12 +119,20 @@ strong.important {
 hr {
   border: none;
   border-bottom: 1px solid #d8d4d0;
-  margin-top: 20px;
-  margin-bottom: 30px; }
+  margin: 15px 0; }
 
 .container {
-  width: 500px;
-  margin: 0 auto; }
+  padding: 80px 150px;
+  background: #fff;
+  border: 1px solid #696968;
+  border-top: 4px solid #9d3c3c;
+  border-radius: 0px 0px 5px 5px;
+  -moz-border-radius: 0px 0px 5px 5px;
+  -webkit-box-shadow: 3px 3px 5px 3px rgba(0, 0, 0, 0.35);
+  box-shadow: 3px 3px 5px 3px rgba(0, 0, 0, 0.35);
+  width: 90%;
+  margin: 0 auto;
+  max-width: 500px;}
 
 @-webkit-keyframes fade-in {
   0% {
@@ -144,14 +156,13 @@ hr {
     opacity: 1; } }
 
 .game-container {
-  margin-top: 40px;
   position: relative;
   padding: 15px;
   cursor: default;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -moz-user-select: none;
-  background: #bbada0;
+  background: #8A8B8C;
   border-radius: 6px;
   width: 500px;
   height: 500px;
@@ -222,7 +233,7 @@ hr {
   margin-right: 15px;
   float: left;
   border-radius: 3px;
-  background: rgba(238, 228, 218, 0.35); }
+  background: #C2C0BF; }
   .grid-cell:last-child {
     margin-right: 0; }
 
@@ -315,66 +326,68 @@ hr {
     z-index: 10;
     font-size: 55px; }
   .tile.tile-2 .tile-inner {
-    background: #eee4da;
+    background: #fff url('../img/caltech.png');
+    background-size: cover;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); }
   .tile.tile-4 .tile-inner {
-    background: #ede0c8;
+    background: #fff url('../img/stanford.png');
+    background-size: cover;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); }
   .tile.tile-8 .tile-inner {
-    color: #f9f6f2;
-    background: #f2b179; }
+    background: #fff url('../img/uc.png');
+    background-size: cover; }
   .tile.tile-16 .tile-inner {
-    color: #f9f6f2;
-    background: #f59563; }
+    background: #fff url('../img/uchicago.png');
+    background-size: cover; }
   .tile.tile-32 .tile-inner {
-    color: #f9f6f2;
-    background: #f67c5f; }
+    background: #fff url('../img/upenn.png');
+    background-size: cover; }
   .tile.tile-64 .tile-inner {
-    color: #f9f6f2;
-    background: #f65e3b; }
+    background: #fff url('../img/princeton.png');
+    background-size: cover; }
   .tile.tile-128 .tile-inner {
-    color: #f9f6f2;
-    background: #edcf72;
+    background: #fff url('../img/columbia.png');
+    background-size: cover;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.2381), inset 0 0 0 1px rgba(255, 255, 255, 0.14286);
     font-size: 45px; }
     @media screen and (max-width: 520px) {
       .tile.tile-128 .tile-inner {
         font-size: 25px; } }
   .tile.tile-256 .tile-inner {
-    color: #f9f6f2;
-    background: #edcc61;
+    background: #fff url('../img/cornell.png');
+    background-size: cover;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.31746), inset 0 0 0 1px rgba(255, 255, 255, 0.19048);
     font-size: 45px; }
     @media screen and (max-width: 520px) {
       .tile.tile-256 .tile-inner {
         font-size: 25px; } }
   .tile.tile-512 .tile-inner {
-    color: #f9f6f2;
-    background: #edc850;
+    background: #fff url('../img/yale.png');
+    background-size: cover;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.39683), inset 0 0 0 1px rgba(255, 255, 255, 0.2381);
     font-size: 45px; }
     @media screen and (max-width: 520px) {
       .tile.tile-512 .tile-inner {
         font-size: 25px; } }
   .tile.tile-1024 .tile-inner {
-    color: #f9f6f2;
-    background: #edc53f;
+    background: #fff url('../img/harvard.png');
+    background-size: cover;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.47619), inset 0 0 0 1px rgba(255, 255, 255, 0.28571);
     font-size: 35px; }
     @media screen and (max-width: 520px) {
       .tile.tile-1024 .tile-inner {
         font-size: 15px; } }
   .tile.tile-2048 .tile-inner {
-    color: #f9f6f2;
-    background: #edc22e;
+    background: #fff url('../img/MIT.jpg');
+    background-size: cover;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.55556), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
     font-size: 35px; }
     @media screen and (max-width: 520px) {
       .tile.tile-2048 .tile-inner {
         font-size: 15px; } }
   .tile.tile-super .tile-inner {
-    color: #f9f6f2;
-    background: #3c3a32;
+    background: #fff url('../img/ihtfp.png');
+    background-size: cover;
     font-size: 30px; }
     @media screen and (max-width: 520px) {
       .tile.tile-super .tile-inner {
@@ -485,44 +498,44 @@ hr {
   animation-fill-mode: backwards; }
 
 .game-intro {
-  margin-bottom: 0; }
+  margin: 10px 0; }
 
 .game-explanation {
   margin-top: 50px; }
 
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 850px) {
   html, body {
     font-size: 15px; }
 
   body {
-    margin: 20px 0;
     padding: 0 20px; }
 
   h1.title {
-    font-size: 27px;
-    margin-top: 15px; }
+    font-size: 36px;
+    margin-top: 5px; }
 
   .container {
     width: 280px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    padding: 50px; }
 
   .score-container, .best-container {
     margin-top: 0;
-    padding: 15px 10px;
+    padding: 10px 8px;
+    font-size: inherit;
     min-width: 40px; }
 
   .heading {
     margin-bottom: 10px; }
 
   .game-container {
-    margin-top: 40px;
+    
     position: relative;
     padding: 10px;
     cursor: default;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -moz-user-select: none;
-    background: #bbada0;
     border-radius: 6px;
     width: 280px;
     height: 280px;
@@ -592,8 +605,7 @@ hr {
     height: 57.5px;
     margin-right: 10px;
     float: left;
-    border-radius: 3px;
-    background: rgba(238, 228, 218, 0.35); }
+    border-radius: 3px; }
     .grid-cell:last-child {
       margin-right: 0; }
 
